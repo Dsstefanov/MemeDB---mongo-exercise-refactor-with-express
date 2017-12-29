@@ -1,0 +1,8 @@
+{{#each data}}
+    <fieldset>
+        <legend>{{this.imageTitle}}</legend>
+        <img src="{{this.imageUrl}}">
+        <p>{{this.description}}</p>
+        <button onclick='location.href="/delete?id={{this._id}}"' class="deleteBtn">Delete</button>
+    </fieldset>
+{{/each}}
